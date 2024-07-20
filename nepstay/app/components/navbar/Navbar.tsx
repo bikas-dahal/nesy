@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-// import SearchFilters from './SearchFilters';
+import SearchFilters from './SearchFilters';
 // import UserNav from './UserNav';
 // // import { getUserId } from '@/app/lib/actions';
 // import AddPropertyButton from './AddPropertyButton';
@@ -20,6 +20,16 @@ const Navbar = async () => {
                             height={38}
                         />
                     </Link>
+
+                    <div className="flex space-x-6">
+                        <SearchFilters />
+                        {/* <UserNav /> */}
+                        {/* <AddPropertyButton /> */}
+                    </div>
+
+                    <div className="flex items-center space-x-6">
+                        User Nav
+                    </div>
 
                 </div>
             </div> 
